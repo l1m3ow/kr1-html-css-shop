@@ -1,27 +1,165 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
+/*
+Устанавливаем border-box для всех элементов.
+Теперь padding и border входят в указанную ширину элемента.
+*/
+* {
+    box-sizing: border-box;
 }
 
+/*
+Основные настройки страницы.
+margin: 0 убирает стандартный белый отступ браузера.
+*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #222222;
+    background-color: #ffffff;
+}
+
+/*
+Добавляем внутренние отступы крупным частям страницы.
+*/
 header,
 main,
 footer {
-  padding: 20px;
+    padding: 20px;
 }
 
+/*
+Оформление шапки.
+*/
 header {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
+/*
+Оформление подвала.
+*/
 footer {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
-section {
-  margin-bottom: 24px;
+/*
+Ограничиваем ширину содержимого шапки.
+margin: 0 auto размещает блок по центру.
+*/
+.site-header {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-section h2 {
-  margin-top: 0;
+/*
+Текстовый логотип.
+*/
+.site-logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: #222222;
+}
+
+/*
+Убираем маркеры и стандартные отступы у списка меню.
+*/
+.site-nav__list {
+    padding: 0;
+    margin: 16px 0 0;
+    list-style: none;
+}
+
+/*
+Расстояние между пунктами меню.
+*/
+.site-nav__list li {
+    margin-bottom: 8px;
+}
+
+/*
+Оформление ссылок меню.
+*/
+.site-nav__list a {
+    color: #0057b8;
+    text-decoration: none;
+}
+
+/*
+Подчёркивание ссылки при наведении.
+*/
+.site-nav__list a:hover {
+    text-decoration: underline;
+}
+
+/*
+Первый крупный блок страницы.
+*/
+.hero {
+    max-width: 1100px;
+    margin: 0 auto 32px;
+    padding: 32px 20px;
+    background-color: #eef5ff;
+    border-radius: 12px;
+}
+
+/*
+Общее оформление разделов.
+*/
+.section {
+    max-width: 1100px;
+    margin: 0 auto 32px;
+}
+
+/*
+Убираем лишний верхний отступ у заголовка раздела.
+*/
+.section h2 {
+    margin-top: 0;
+}
+
+/*
+Карточка товара.
+*/
+.product-card {
+    margin-bottom: 16px;
+    padding: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+/*
+Убираем верхний отступ у заголовка карточки.
+*/
+.product-card h3 {
+    margin-top: 0;
+}
+
+/*
+Оформляем обычную ссылку как кнопку.
+*/
+.button {
+    display: inline-block;
+    padding: 10px 16px;
+    color: #ffffff;
+    background-color: #0057b8;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/*
+Изменение цвета кнопки при наведении.
+*/
+.button:hover {
+    background-color: #003f86;
+}
+
+/*
+Дополнительный информационный блок.
+*/
+.aside-info {
+    max-width: 1100px;
+    margin: 0 auto 32px;
+    padding: 16px;
+    border-left: 4px solid #0057b8;
+    background-color: #f7f7f7;
 }
