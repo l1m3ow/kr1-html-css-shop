@@ -525,3 +525,28 @@ position: sticky оставляет фильтры видимыми
     color: #ffffff;
     background-color: var(--color-primary);
 }
+
+.site-nav__item {
+    margin: 0;
+}
+
+.site-nav__link {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.site-nav__link:hover {
+    text-decoration: underline;
+}
+
+.site-nav__link:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+}
+
+.site-nav__link--active {
+    color: var(--color-text);
+    font-weight: bold;
+    text-decoration: underline;
+}
