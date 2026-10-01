@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Каталог компьютерных аксессуаров учебного интернет-магазина ShopProject."
+    >
+
+    <title>Каталог товаров — ShopProject</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="site-header">
+            <a class="site-logo" href="index.html">
+                ShopProject
+            </a>
+
+            <nav class="site-nav" aria-label="Основная навигация">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="index.html">
+                            Главная
+                        </a>
+                    </li>
+
+                    <li class="site-nav__item">
+                        <a
+                            class="site-nav__link site-nav__link--active"
+                            href="catalog.html"
+                        >
+                            Каталог
+                        </a>
+                    </li>
+
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="product.html">
+                            Товар
+                        </a>
+                    </li>
+
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="order.html">
+                            Оформить заказ
+                        </a>
+                    </li>
+
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="contacts.html">
+                            Контакты
+                        </a>
+                    </li>
+
+                    <li class="site-nav__item">
+                        <a
+                            class="site-nav__link"
+                            href="index.html#advantages"
+                        >
+                            Преимущества
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-heading">
+            <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                <a href="index.html">Главная</a>
+                <span aria-hidden="true">→</span>
+                <span>Каталог</span>
+            </nav>
+
+            <h1>Каталог компьютерных аксессуаров</h1>
+
+            <p>
+                В каталоге представлены учебные карточки компьютерной
+                периферии и аксессуаров.
+            </p>
+        </section>
+
+        <div class="catalog-layout">
+
+            <aside class="catalog-filter">
+                <h2 class="catalog-filter__title">Фильтры</h2>
+
+                <form class="filter-form" action="#" method="get">
+                    <fieldset class="filter-form__group">
+                        <legend>Категория</legend>
+
+                        <label class="filter-form__option">
+                            <input
+                                type="checkbox"
+                                name="category"
+                                value="keyboard"
+                            >
+                            Клавиатуры
+                        </label>
+
+                        <label class="filter-form__option">
+                            <input
+                                type="checkbox"
+                                name="category"
+                                value="mouse"
+                            >
+                            Мыши
+                        </label>
+
+                        <label class="filter-form__option">
+                            <input
+                                type="checkbox"
+                                name="category"
+                                value="headphones"
+                            >
+                            Наушники
+                        </label>
+
+                        <label class="filter-form__option">
+                            <input
+                                type="checkbox"
+                                name="category"
+                                value="accessories"
+                            >
+                            Аксессуары
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="filter-form__group">
+                        <legend>Стоимость</legend>
+
+                        <label class="filter-form__option">
+                            <input
+                                type="radio"
+                                name="price"
+                                value="low"
+                            >
+                            До 2000 руб.
+                        </label>
+
+                        <label class="filter-form__option">
+                            <input
+                                type="radio"
+                                name="price"
+                                value="middle"
+                            >
+                            От 2000 до 5000 руб.
+                        </label>
+
+                        <label class="filter-form__option">
+                            <input
+                                type="radio"
+                                name="price"
+                                value="high"
+                            >
+                            Более 5000 руб.
+                        </label>
+                    </fieldset>
+
+                    <button class="button" type="submit">
+                        Применить
+                    </button>
+                </form>
+            </aside>
+
+            <section class="catalog-content">
+                <h2>Все товары</h2>
+
+                <div class="product-grid">
+
+                    <article class="product-card">
+                        <span class="product-card__badge">
+                            Хит
+                        </span>
+
+                        <div
+                            class="product-card__image"
+                            aria-hidden="true"
+                        >
+                            ⌨️
+                        </div>
+
+                        <p class="product-card__category">
+                            Клавиатуры
+                        </p>
+
+                        <h3 class="product-card__title">
+                            Механическая клавиатура
+                        </h3>
+
+                        <p class="product-card__description">
+                            Компактная механическая клавиатура с подсветкой
+                            и удобными клавишами.
+                        </p>
+
+                        <p class="product-card__price">
+                            4 990 руб.
+                        </p>
+
+                        <div class="product-card__actions">
+                            <a
+                                class="button button--secondary"
+                                href="product.html"
+                            >
+                                Подробнее
+                            </a>
+
+                            <a class="button" href="order.html">
+                                Заказать
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card product-card--discount">
+                        <span class="product-card__badge">
+                            Скидка
+                        </span>
+
+                        <div
+                            class="product-card__image"
+                            aria-hidden="true"
+                        >
+                            🖱️
+                        </div>
+
+                        <p class="product-card__category">
+                            Мыши
+                        </p>
+
+                        <h3 class="product-card__title">
+                            Беспроводная мышь
+                        </h3>
+
+                        <p class="product-card__description">
+                            Эргономичная мышь с бесшумными кнопками
+                            и беспроводным подключением.
+                        </p>
+
+                        <p class="product-card__price">
+                            1 990 руб.
+                        </p>
+
+                        <div class="product-card__actions">
+                            <a
+                                class="button button--secondary"
+                                href="product.html"
+                            >
+                                Подробнее
+                            </a>
+
+                            <a class="button" href="order.html">
+                                Заказать
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <span class="product-card__badge">
+                            Новинка
+                        </span>
+
+                        <div
+                            class="product-card__image"
+                            aria-hidden="true"
+                        >
+                            🎧
+                        </div>
+
+                        <p class="product-card__category">
+                            Наушники
+                        </p>
+
+                        <h3 class="product-card__title">
+                            Игровая гарнитура
+                        </h3>
+
+                        <p class="product-card__description">
+                            Гарнитура с объёмным звуком,
+                            микрофоном и мягкими амбушюрами.
+                        </p>
+
+                        <p class="product-card__price">
+                            3 490 руб.
+                        </p>
+
+                        <div class="product-card__actions">
+                            <a
+                                class="button button--secondary"
+                                href="product.html"
+                            >
+                                Подробнее
+                            </a>
+
+                            <a class="button" href="order.html">
+                                Заказать
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div
+                            class="product-card__image"
+                            aria-hidden="true"
+                        >
+                            📷
+                        </div>
+
+                        <p class="product-card__category">
+                            Камеры
+                        </p>
+
+                        <h3 class="product-card__title">
+                            Веб-камера Full HD
+                        </h3>
+
+                        <p class="product-card__description">
+                            Камера для видеозвонков с разрешением Full HD
+                            и встроенным микрофоном.
+                        </p>
+
+                        <p class="product-card__price">
+                            2 790 руб.
+                        </p>
+
+                        <div class="product-card__actions">
+                            <a
+                                class="button button--secondary"
+                                href="product.html"
+                            >
+                                Подробнее
+                            </a>
+
+                            <a class="button" href="order.html">
+                                Заказать
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div
+                            class="product-card__image"
+                            aria-hidden="true"
+                        >
+                            💡
+                        </div>
+
+                        <p class="product-card__category">
+                            Аксессуары
+                        </p>
+
+                        <h3 class="product-card__title">
+                            Настольная LED-лампа
+                        </h3>
+
+                        <p class="product-card__description">
+                            Лампа с регулировкой яркости
+                            и несколькими цветовыми режимами.
+                        </p>
+
+                        <p class="product-card__price">
+                            2 290 руб.
+                        </p>
+
+                        <div class="product-card__actions">
+                            <a
+                                class="button button--secondary"
+                                href="product.html"
+                            >
+                                Подробнее
+                            </a>
+
+                            <a class="button" href="order.html">
+                                Заказать
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div
+                            class="product-card__image"
+                            aria-hidden="true"
+                        >
+                            🔌
+                        </div>
+
+                        <p class="product-card__category">
+                            Аксессуары
+                        </p>
+
+                        <h3 class="product-card__title">
+                            USB-концентратор
+                        </h3>
+
+                        <p class="product-card__description">
+                            Компактный концентратор с четырьмя
+                            дополнительными USB-портами.
+                        </p>
+
+                        <p class="product-card__price">
+                            1 490 руб.
+                        </p>
+
+                        <div class="product-card__actions">
+                            <a
+                                class="button button--secondary"
+                                href="product.html"
+                            >
+                                Подробнее
+                            </a>
+
+                            <a class="button" href="order.html">
+                                Заказать
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="contacts">
+        <p>&copy; 2026 ShopProject. Все права защищены.</p>
+        <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    </footer>
+
+</body>
+</html>
