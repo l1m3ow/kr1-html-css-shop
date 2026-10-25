@@ -1,36 +1,29 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
       content="ShopProject — учебный интернет-магазин компьютерных аксессуаров."
-    />
+    >
     <title>ShopProject — компьютерные аксессуары</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="container site-header__inner">
-        <a class="site-logo" href="index.html">Shop<span>Project</span></a>
+        <a class="site-logo" href="index.html">Shop<span class="site-logo__accent">Project</span></a>
         <nav class="site-nav" aria-label="Основная навигация">
           <ul class="site-nav__list">
-            <li>
-              <a
-                class="site-nav__link site-nav__link--active"
-                href="index.html"
-                aria-current="page"
-                >Главная</a
-              >
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a>
             </li>
-            <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-            <li><a class="site-nav__link" href="product.html">Товар</a></li>
-            <li>
-              <a class="site-nav__link" href="order.html">Оформить заказ</a>
-            </li>
-            <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="order.html">Оформить заказ</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -42,14 +35,10 @@
             <p class="eyebrow">Техника для учёбы и работы</p>
             <h1>Компьютерные аксессуары без лишней сложности</h1>
             <p class="hero__text">
-              Клавиатуры, мыши, гарнитуры и полезные устройства в одном учебном
-              интернет-магазине.
+              Клавиатуры, мыши, гарнитуры и полезные устройства в одном учебном интернет-магазине.
             </p>
             <div class="hero__actions">
-              <a class="button" href="catalog.html">Смотреть каталог</a
-              ><a class="button button--secondary" href="#advantages"
-                >Наши преимущества</a
-              >
+              <a class="button" href="catalog.html">Смотреть каталог</a><a class="button button--secondary" href="#advantages">Наши преимущества</a>
             </div>
           </div>
           <div class="hero__visual" aria-hidden="true">⌨️</div>
@@ -61,22 +50,23 @@
           <h2>Преимущества ShopProject</h2>
           <div class="advantages-grid">
             <article class="feature-card">
-              <span aria-hidden="true">✓</span>
-              <h3>Понятный выбор</h3>
-              <p>Характеристики и цены собраны прямо в карточках товаров.</p>
-            </article>
-            <article class="feature-card">
-              <span aria-hidden="true">⚡</span>
-              <h3>Быстрая заявка</h3>
-              <p>
-                Заказ можно оформить через отдельную страницу или модальное
-                окно.
+              <span aria-hidden="true" class="feature-card__icon">✓</span>
+              <h3 class="feature-card__title">Понятный выбор</h3>
+              <p class="feature-card__description">
+                Характеристики и цены собраны прямо в карточках товаров.
               </p>
             </article>
             <article class="feature-card">
-              <span aria-hidden="true">♡</span>
-              <h3>Забота о деталях</h3>
-              <p>
+              <span aria-hidden="true" class="feature-card__icon">⚡</span>
+              <h3 class="feature-card__title">Быстрая заявка</h3>
+              <p class="feature-card__description">
+                Заказ можно оформить через отдельную страницу или модальное окно.
+              </p>
+            </article>
+            <article class="feature-card">
+              <span aria-hidden="true" class="feature-card__icon">♡</span>
+              <h3 class="feature-card__title">Забота о деталях</h3>
+              <p class="feature-card__description">
                 Адаптивная верстка, заметный фокус и семантическая разметка.
               </p>
             </article>
@@ -88,30 +78,28 @@
           <div class="section-heading">
             <div>
               <p class="eyebrow">Популярное</p>
-              <h2>Товары, которые выбирают чаще</h2>
+              <h2 class="section-heading__title">Товары, которые выбирают чаще</h2>
             </div>
             <a href="catalog.html">Весь каталог →</a>
           </div>
-          <div class="product-grid product-grid--home">
+          <div class="product-grid">
             <article class="product-card">
-              <span class="product-card__badge">Хит</span
-              ><img
+              <span class="product-card__badge">Хит</span>
+              <img
                 class="product-card__image"
                 src="images/keyboard.svg"
                 alt="Механическая клавиатура"
-              />
+              >
               <p class="product-card__category">Клавиатуры</p>
               <h3 class="product-card__title">Механическая клавиатура</h3>
               <p class="product-card__description">
-                Компактная модель с RGB-подсветкой и механическими
-                переключателями.
+                Компактная модель с RGB-подсветкой и механическими переключателями.
               </p>
               <p class="product-card__price">4 990 руб.</p>
               <div class="product-card__actions">
-                <a class="button button--secondary" href="product.html"
-                  >Подробнее</a
-                ><button
-                  class="button product-card__button"
+                <a class="button button--secondary product-card__action" href="product.html">Подробнее</a>
+                <button
+                  class="button product-card__button product-card__action"
                   type="button"
                   data-product="Механическая клавиатура"
                 >
@@ -120,13 +108,8 @@
               </div>
             </article>
             <article class="product-card">
-              <span class="product-card__badge product-card__badge--sale"
-                >−15%</span
-              ><img
-                class="product-card__image"
-                src="images/mouse.svg"
-                alt="Беспроводная мышь"
-              />
+              <span class="product-card__badge product-card__badge--sale">−15%</span>
+              <img class="product-card__image" src="images/mouse.svg" alt="Беспроводная мышь">
               <p class="product-card__category">Мыши</p>
               <h3 class="product-card__title">Беспроводная мышь</h3>
               <p class="product-card__description">
@@ -134,10 +117,9 @@
               </p>
               <p class="product-card__price">1 990 руб.</p>
               <div class="product-card__actions">
-                <a class="button button--secondary" href="product.html"
-                  >Подробнее</a
-                ><button
-                  class="button product-card__button"
+                <a class="button button--secondary product-card__action" href="product.html">Подробнее</a>
+                <button
+                  class="button product-card__button product-card__action"
                   type="button"
                   data-product="Беспроводная мышь"
                 >
@@ -146,23 +128,16 @@
               </div>
             </article>
             <article class="product-card">
-              <span class="product-card__badge">Новинка</span
-              ><img
-                class="product-card__image"
-                src="images/headphones.svg"
-                alt="Игровая гарнитура"
-              />
+              <span class="product-card__badge">Новинка</span>
+              <img class="product-card__image" src="images/headphones.svg" alt="Игровая гарнитура">
               <p class="product-card__category">Наушники</p>
               <h3 class="product-card__title">Игровая гарнитура</h3>
-              <p class="product-card__description">
-                Объёмный звук, мягкие амбушюры и регулируемый микрофон.
-              </p>
+              <p class="product-card__description">Объёмный звук, мягкие амбушюры и регулируемый микрофон.</p>
               <p class="product-card__price">3 490 руб.</p>
               <div class="product-card__actions">
-                <a class="button button--secondary" href="product.html"
-                  >Подробнее</a
-                ><button
-                  class="button product-card__button"
+                <a class="button button--secondary product-card__action" href="product.html">Подробнее</a>
+                <button
+                  class="button product-card__button product-card__action"
                   type="button"
                   data-product="Игровая гарнитура"
                 >
@@ -173,13 +148,12 @@
           </div>
         </div>
       </section>
-      <aside class="container info-banner">
+      <aside class="container info-banner" id="contacts" aria-labelledby="project-contacts-title">
         <div>
           <p class="eyebrow">Учебный проект</p>
-          <h2>Сайт создан в рамках контрольной работы №1</h2>
-          <p>
-            Проект демонстрирует многостраничную структуру, Flexbox, Grid, БЭМ,
-            формы и базовую JavaScript-валидацию.
+          <h2 class="info-banner__title" id="project-contacts-title">Контакты учебного проекта</h2>
+          <p class="info-banner__description">
+            Контактная информация и режим работы находятся на отдельной странице. Сайт демонстрационный: покупки и серверная отправка заявок не выполняются.
           </p>
         </div>
         <a class="button" href="contacts.html">Связаться</a>
@@ -188,26 +162,26 @@
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div>
-          <a class="site-logo site-logo--footer" href="index.html"
-            >Shop<span>Project</span></a
-          >
+          <a class="site-logo site-logo--footer" href="index.html">
+            Shop<span class="site-logo__accent">Project</span>
+          </a>
           <p>Учебный интернет-магазин компьютерных аксессуаров.</p>
         </div>
         <div>
           <p><strong>Навигация</strong></p>
-          <a href="catalog.html">Каталог</a><a href="order.html">Заказ</a
-          ><a href="contacts.html">Контакты</a>
+          <a href="catalog.html" class="site-footer__link">Каталог</a>
+          <a href="order.html" class="site-footer__link">Заказ</a>
+          <a href="contacts.html" class="site-footer__link">Контакты</a>
+          <a class="site-footer__link" href="index.html#advantages">Преимущества</a>
+          <a class="site-footer__link" href="index.html#popular">Популярные товары</a>
+          <a class="site-footer__link" href="index.html#contacts">Контакты проекта</a>
         </div>
-        <p>© 2026 ShopProject<br />Фронтенд и бэкенд разработка</p>
+        <p>© 2026 ShopProject<br>Фронтенд и бэкенд разработка</p>
       </div>
     </footer>
-    <dialog
-      class="order-dialog"
-      id="order-dialog"
-      aria-labelledby="order-dialog-title"
-    >
+    <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
       <button
-        class="dialog-close"
+        class="order-dialog__close"
         id="close-order-dialog"
         type="button"
         aria-label="Закрыть окно"
@@ -215,70 +189,75 @@
         ×
       </button>
       <p class="eyebrow">Быстрая заявка</p>
-      <h2 id="order-dialog-title">Оформление заказа</h2>
-      <form
-        class="order-form"
-        id="order-form"
-        action="#"
-        method="post"
-        novalidate
-      >
-        <input id="selected-product" name="product" type="hidden" />
-        <div class="form-field">
-          <label for="order-name">Имя</label
-          ><input
+      <h2 id="order-dialog-title" class="order-dialog__title">Оформление заказа</h2>
+      <p class="order-dialog__description">
+        Учебная форма: проверяет заполнение, но не отправляет данные на сервер.
+      </p>
+      <form class="order-form" id="order-form" action="#" method="post" novalidate>
+        <input id="selected-product" name="product" type="hidden">
+        <div class="order-form__field">
+          <label for="order-name" class="order-form__label">Имя</label>
+          <input
             id="order-name"
             name="name"
             type="text"
             minlength="2"
             autocomplete="name"
             required
-          />
+            class="order-form__input"
+          >
         </div>
-        <div class="form-field">
-          <label for="order-email">E-mail</label
-          ><input
+        <div class="order-form__field">
+          <label for="order-email" class="order-form__label">E-mail</label>
+          <input
             id="order-email"
             name="email"
             type="email"
             autocomplete="email"
             required
-          />
+            class="order-form__input"
+          >
         </div>
-        <div class="form-field">
-          <label for="order-phone">Телефон</label
-          ><input
+        <div class="order-form__field">
+          <label for="order-phone" class="order-form__label">Телефон</label>
+          <input
             id="order-phone"
             name="phone"
             type="tel"
             placeholder="+7 (900) 000-00-00"
             pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
             required
-          /><small>Формат: +7 (900) 000-00-00</small>
+            class="order-form__input"
+            autocomplete="tel"
+            aria-describedby="order-phone-hint"
+          >
+          <small class="order-form__hint" id="order-phone-hint">Формат: +7 (900) 000-00-00</small>
         </div>
-        <div class="form-field">
-          <label for="order-topic">Тема</label
-          ><select id="order-topic" name="topic" required>
+        <div class="order-form__field">
+          <label for="order-topic" class="order-form__label">Тема</label>
+          <select id="order-topic" name="topic" required class="order-form__select">
             <option value="">Выберите тему</option>
             <option value="order">Заказ товара</option>
             <option value="consultation">Консультация</option>
             <option value="delivery">Доставка</option>
           </select>
         </div>
-        <div class="form-field">
-          <label for="order-comment">Комментарий</label
-          ><textarea id="order-comment" name="comment" rows="3"></textarea>
+        <div class="order-form__field">
+          <label for="order-comment" class="order-form__label">Комментарий</label>
+          <textarea id="order-comment" name="comment" rows="3" class="order-form__textarea"></textarea>
         </div>
-        <label class="checkbox"
-          ><input name="agreement" type="checkbox" required /> Я согласен на
-          обработку данных</label
-        ><button class="button button--wide" type="submit">
-          Отправить заявку
-        </button>
+        <label class="order-form__agreement">
+          <input name="agreement" type="checkbox" required class="order-form__checkbox">
+          Я согласен на обработку данных
+        </label>
+        <div class="order-form__actions">
+          <button class="button button--wide order-form__action" type="submit">Отправить заявку</button>
+          <button class="button button--secondary order-form__action" type="reset">Очистить</button>
+        </div>
       </form>
     </dialog>
-    <p class="toast" id="success-message" role="status" hidden>
-      Заявка успешно отправлена!
+    <p class="success-message success-message--toast" id="success-message" role="status" hidden>
+      Форма заполнена корректно. Это демо: данные не отправляются на сервер.
     </p>
   </body>
 </html>
