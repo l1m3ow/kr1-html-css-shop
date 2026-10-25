@@ -1,34 +1,29 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
       content="Форма оформления заказа в учебном интернет-магазине ShopProject."
-    />
+    >
     <title>Оформление заказа — ShopProject</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="container site-header__inner">
-        <a class="site-logo" href="index.html">Shop<span>Project</span></a>
+        <a class="site-logo" href="index.html">Shop<span class="site-logo__accent">Project</span></a>
         <nav class="site-nav" aria-label="Основная навигация">
           <ul class="site-nav__list">
-            <li><a class="site-nav__link" href="index.html">Главная</a></li>
-            <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-            <li><a class="site-nav__link" href="product.html">Товар</a></li>
-            <li>
-              <a
-                class="site-nav__link site-nav__link--active"
-                href="order.html"
-                aria-current="page"
-                >Оформить заказ</a
-              >
+            <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="order.html" aria-current="page">Оформить заказ</a>
             </li>
-            <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -37,12 +32,11 @@
       <section class="page-heading">
         <div class="container">
           <nav class="breadcrumbs" aria-label="Хлебные крошки">
-            <a href="index.html">Главная</a><span>/</span
-            ><span>Оформление заказа</span>
+            <a href="index.html" class="breadcrumbs__link">Главная</a><span class="breadcrumbs__separator" aria-hidden="true">/</span><span class="breadcrumbs__current" aria-current="page">Оформление заказа</span>
           </nav>
           <p class="eyebrow">Заявка</p>
-          <h1>Оформление заказа</h1>
-          <p>
+          <h1 class="page-heading__title">Оформление заказа</h1>
+          <p class="page-heading__description">
             Заполните форму — это демонстрация, данные никуда не отправляются.
           </p>
         </div>
@@ -50,18 +44,15 @@
       <section class="container order-layout">
         <div class="order-copy">
           <h2>Остался один шаг</h2>
-          <p>
-            Выберите товар и укажите удобные контактные данные. Обязательные
-            поля отмечены звёздочкой.
-          </p>
+          <p>Выберите товар и укажите удобные контактные данные. Обязательные поля отмечены звёздочкой.</p>
           <ol class="steps">
-            <li><span>1</span>Выберите товар</li>
-            <li><span>2</span>Заполните контакты</li>
-            <li><span>3</span>Отправьте заявку</li>
+            <li class="steps__item"><span class="steps__number">1</span>Выберите товар</li>
+            <li class="steps__item"><span class="steps__number">2</span>Заполните контакты</li>
+            <li class="steps__item"><span class="steps__number">3</span>Отправьте заявку</li>
           </ol>
           <aside class="notice">
             <strong>Учебный режим</strong>
-            <p>Оплата и передача данных на сервер не выполняются.</p>
+            <p class="notice__description">Оплата и передача данных на сервер не выполняются.</p>
           </aside>
         </div>
         <form
@@ -72,13 +63,11 @@
           novalidate
         >
           <h2>Данные заказа</h2>
-          <div class="form-field">
-            <label for="page-product">Товар *</label
-            ><select id="page-product" name="product" required>
+          <div class="order-form__field">
+            <label for="page-product" class="order-form__label">Товар *</label>
+            <select id="page-product" name="product" required class="order-form__select">
               <option value="">Выберите товар</option>
-              <option value="keyboard">
-                Механическая клавиатура — 4 990 руб.
-              </option>
+              <option value="keyboard">Механическая клавиатура — 4 990 руб.</option>
               <option value="mouse">Беспроводная мышь — 1 990 руб.</option>
               <option value="headphones">Игровая гарнитура — 3 490 руб.</option>
               <option value="camera">Веб-камера Full HD — 2 790 руб.</option>
@@ -86,77 +75,82 @@
               <option value="hub">USB-концентратор — 1 490 руб.</option>
             </select>
           </div>
-          <div class="form-row">
-            <div class="form-field">
-              <label for="page-name">Имя *</label
-              ><input
+          <div class="order-form__row">
+            <div class="order-form__field">
+              <label for="page-name" class="order-form__label">Имя *</label>
+              <input
                 id="page-name"
                 name="name"
                 type="text"
                 minlength="2"
                 autocomplete="name"
                 required
-              />
+                class="order-form__input"
+              >
             </div>
-            <div class="form-field">
-              <label for="page-email">E-mail *</label
-              ><input
+            <div class="order-form__field">
+              <label for="page-email" class="order-form__label">E-mail *</label>
+              <input
                 id="page-email"
                 name="email"
                 type="email"
                 autocomplete="email"
                 required
-              />
+                class="order-form__input"
+              >
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-field">
-              <label for="page-phone">Телефон *</label
-              ><input
+          <div class="order-form__row">
+            <div class="order-form__field">
+              <label for="page-phone" class="order-form__label">Телефон *</label>
+              <input
                 id="page-phone"
                 name="phone"
                 type="tel"
                 placeholder="+7 (900) 000-00-00"
                 pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
                 required
-              /><small>Формат: +7 (900) 000-00-00</small>
+                class="order-form__input"
+                autocomplete="tel"
+                aria-describedby="page-phone-hint"
+              >
+              <small class="order-form__hint" id="page-phone-hint">Формат: +7 (900) 000-00-00</small>
             </div>
-            <div class="form-field">
-              <label for="page-date">Желаемая дата связи</label
-              ><input id="page-date" name="date" type="date" />
+            <div class="order-form__field">
+              <label for="page-date" class="order-form__label">Желаемая дата связи</label>
+              <input id="page-date" name="date" type="date" class="order-form__input">
             </div>
           </div>
-          <div class="form-field">
-            <label for="page-topic">Тема обращения *</label
-            ><select id="page-topic" name="topic" required>
+          <div class="order-form__field">
+            <label for="page-topic" class="order-form__label">Тема обращения *</label>
+            <select id="page-topic" name="topic" required class="order-form__select">
               <option value="">Выберите тему</option>
               <option value="order">Оформление заказа</option>
               <option value="consultation">Консультация</option>
               <option value="delivery">Доставка</option>
             </select>
           </div>
-          <div class="form-field">
-            <label for="page-comment">Комментарий</label
-            ><textarea
+          <div class="order-form__field">
+            <label for="page-comment" class="order-form__label">Комментарий</label>
+            <textarea
               id="page-comment"
               name="comment"
               rows="5"
               placeholder="Дополнительная информация"
-            ></textarea>
+              class="order-form__textarea"
+            >
+            </textarea>
           </div>
-          <label class="checkbox"
-            ><input name="agreement" type="checkbox" required /> Я согласен на
-            обработку данных *</label
-          ><button class="button button--wide" type="submit">
-            Отправить заявку
-          </button>
-          <p
-            class="form-success"
-            id="page-success-message"
-            role="status"
-            hidden
-          >
-            Заявка успешно отправлена. Спасибо!
+          <label class="order-form__agreement">
+            <input name="agreement" type="checkbox" required class="order-form__checkbox">
+            Я согласен на обработку данных *
+          </label>
+          <div class="order-form__actions">
+            <button class="button button--wide order-form__action" type="submit">Отправить заявку</button>
+            <button class="button button--secondary order-form__action" type="reset">Очистить</button>
+          </div>
+          <p class="success-message" id="page-success-message" role="status" hidden>
+            Форма заполнена корректно. Это демо: данные не отправляются на сервер.
           </p>
         </form>
       </section>
@@ -164,17 +158,21 @@
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div>
-          <a class="site-logo site-logo--footer" href="index.html"
-            >Shop<span>Project</span></a
-          >
+          <a class="site-logo site-logo--footer" href="index.html">
+            Shop<span class="site-logo__accent">Project</span>
+          </a>
           <p>Учебный интернет-магазин компьютерных аксессуаров.</p>
         </div>
         <div>
           <p><strong>Навигация</strong></p>
-          <a href="catalog.html">Каталог</a><a href="order.html">Заказ</a
-          ><a href="contacts.html">Контакты</a>
+          <a href="catalog.html" class="site-footer__link">Каталог</a>
+          <a href="order.html" class="site-footer__link">Заказ</a>
+          <a href="contacts.html" class="site-footer__link">Контакты</a>
+          <a class="site-footer__link" href="index.html#advantages">Преимущества</a>
+          <a class="site-footer__link" href="index.html#popular">Популярные товары</a>
+          <a class="site-footer__link" href="index.html#contacts">Контакты проекта</a>
         </div>
-        <p>© 2026 ShopProject<br />Фронтенд и бэкенд разработка</p>
+        <p>© 2026 ShopProject<br>Фронтенд и бэкенд разработка</p>
       </div>
     </footer>
   </body>

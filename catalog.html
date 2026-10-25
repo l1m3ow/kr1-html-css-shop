@@ -1,35 +1,28 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
       content="Каталог компьютерных аксессуаров ShopProject: клавиатуры, мыши, гарнитуры и устройства для рабочего места."
-    />
+    >
     <title>Каталог компьютерных аксессуаров — ShopProject</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="site-header">
       <div class="container site-header__inner">
-        <a class="site-logo" href="index.html">Shop<span>Project</span></a>
+        <a class="site-logo" href="index.html">Shop<span class="site-logo__accent">Project</span></a>
         <nav class="site-nav" aria-label="Основная навигация">
           <ul class="site-nav__list">
-            <li><a class="site-nav__link" href="index.html">Главная</a></li>
-            <li>
-              <a
-                class="site-nav__link site-nav__link--active"
-                href="catalog.html"
-                aria-current="page"
-                >Каталог</a
-              >
+            <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a>
             </li>
-            <li><a class="site-nav__link" href="product.html">Товар</a></li>
-            <li>
-              <a class="site-nav__link" href="order.html">Оформить заказ</a>
-            </li>
-            <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="order.html">Оформить заказ</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -38,169 +31,125 @@
       <section class="page-heading">
         <div class="container">
           <nav class="breadcrumbs" aria-label="Хлебные крошки">
-            <a href="index.html">Главная</a><span>/</span><span>Каталог</span>
+            <a href="index.html" class="breadcrumbs__link">Главная</a><span class="breadcrumbs__separator" aria-hidden="true">/</span><span class="breadcrumbs__current" aria-current="page">Каталог</span>
           </nav>
           <p class="eyebrow">Ассортимент</p>
-          <h1>Каталог аксессуаров</h1>
-          <p>
+          <h1 class="page-heading__title">Каталог аксессуаров</h1>
+          <p class="page-heading__description">
             Всё необходимое для удобной учёбы, работы и отдыха за компьютером.
           </p>
         </div>
       </section>
       <div class="container catalog-layout">
         <aside class="catalog-filter">
-          <h2>Фильтры</h2>
-          <form action="#" method="get">
-            <fieldset>
-              <legend>Категория</legend>
-              <label
-                ><input type="checkbox" name="category" value="keyboard" />
-                Клавиатуры</label
-              ><label
-                ><input type="checkbox" name="category" value="mouse" />
-                Мыши</label
-              ><label
-                ><input type="checkbox" name="category" value="headphones" />
-                Наушники</label
-              ><label
-                ><input type="checkbox" name="category" value="accessories" />
-                Аксессуары</label
-              >
+          <h2 class="catalog-filter__title">Фильтры</h2>
+          <form action="#" method="get" class="catalog-filter__form">
+            <fieldset class="catalog-filter__group">
+              <legend class="catalog-filter__legend">Категория</legend>
+              <label class="catalog-filter__option">
+                <input type="checkbox" name="category" value="keyboard">
+                Клавиатуры
+              </label>
+              <label class="catalog-filter__option">
+                <input type="checkbox" name="category" value="mouse">
+                Мыши
+              </label>
+              <label class="catalog-filter__option">
+                <input type="checkbox" name="category" value="headphones">
+                Наушники
+              </label>
+              <label class="catalog-filter__option">
+                <input type="checkbox" name="category" value="accessories">
+                Аксессуары
+              </label>
             </fieldset>
-            <fieldset>
-              <legend>Стоимость</legend>
-              <label
-                ><input type="radio" name="price" value="low" /> До 2 000
-                руб.</label
-              ><label
-                ><input type="radio" name="price" value="middle" /> 2 000–5 000
-                руб.</label
-              ><label
-                ><input type="radio" name="price" value="high" /> Более 5 000
-                руб.</label
-              >
+            <fieldset class="catalog-filter__group">
+              <legend class="catalog-filter__legend">Стоимость</legend>
+              <label class="catalog-filter__option">
+                <input type="radio" name="price" value="low">
+                До 2 000 руб.
+              </label>
+              <label class="catalog-filter__option">
+                <input type="radio" name="price" value="middle">
+                2 000–5 000 руб.
+              </label>
+              <label class="catalog-filter__option">
+                <input type="radio" name="price" value="high">
+                Более 5 000 руб.
+              </label>
             </fieldset>
-            <button class="button button--wide" type="submit">Применить</button>
+            <button class="button button--wide catalog-filter__submit" type="submit">Применить</button>
           </form>
         </aside>
         <section class="catalog-content">
           <p class="eyebrow">6 товаров</p>
-          <h2>Все товары</h2>
+          <h2 class="catalog-content__title">Все товары</h2>
           <div class="product-grid">
             <article class="product-card">
-              <span class="product-card__badge">Хит</span
-              ><img
+              <span class="product-card__badge">Хит</span>
+              <img
                 class="product-card__image"
                 src="images/keyboard.svg"
                 alt="Механическая клавиатура"
-              />
+              >
               <p class="product-card__category">Клавиатуры</p>
               <h3 class="product-card__title">Механическая клавиатура</h3>
-              <p class="product-card__description">
-                Подсветка, прочный корпус и компактный формат.
-              </p>
+              <p class="product-card__description">Подсветка, прочный корпус и компактный формат.</p>
               <p class="product-card__price">4 990 руб.</p>
               <div class="product-card__actions">
-                <a class="button button--secondary" href="product.html"
-                  >Подробнее</a
-                ><a class="button" href="order.html?product=keyboard"
-                  >Заказать</a
-                >
+                <a class="button button--secondary product-card__action" href="product.html">Подробнее</a><a class="button product-card__action" href="order.html?product=keyboard">Заказать</a>
               </div>
             </article>
             <article class="product-card">
-              <span class="product-card__badge product-card__badge--sale"
-                >−15%</span
-              ><img
-                class="product-card__image"
-                src="images/mouse.svg"
-                alt="Беспроводная мышь"
-              />
+              <span class="product-card__badge product-card__badge--sale">−15%</span>
+              <img class="product-card__image" src="images/mouse.svg" alt="Беспроводная мышь">
               <p class="product-card__category">Мыши</p>
               <h3 class="product-card__title">Беспроводная мышь</h3>
-              <p class="product-card__description">
-                Бесшумные кнопки и эргономичная форма.
-              </p>
+              <p class="product-card__description">Бесшумные кнопки и эргономичная форма.</p>
               <p class="product-card__price">1 990 руб.</p>
               <div class="product-card__actions">
-                <a class="button button--secondary" href="product.html"
-                  >Подробнее</a
-                ><a class="button" href="order.html?product=mouse">Заказать</a>
+                <a class="button button--secondary product-card__action" href="product.html">Подробнее</a><a class="button product-card__action" href="order.html?product=mouse">Заказать</a>
               </div>
             </article>
             <article class="product-card">
-              <span class="product-card__badge">Новинка</span
-              ><img
-                class="product-card__image"
-                src="images/headphones.svg"
-                alt="Игровая гарнитура"
-              />
+              <span class="product-card__badge">Новинка</span>
+              <img class="product-card__image" src="images/headphones.svg" alt="Игровая гарнитура">
               <p class="product-card__category">Наушники</p>
               <h3 class="product-card__title">Игровая гарнитура</h3>
-              <p class="product-card__description">
-                Объёмный звук и регулируемый микрофон.
-              </p>
+              <p class="product-card__description">Объёмный звук и регулируемый микрофон.</p>
               <p class="product-card__price">3 490 руб.</p>
               <div class="product-card__actions">
-                <a class="button button--secondary" href="product.html"
-                  >Подробнее</a
-                ><a class="button" href="order.html?product=headphones"
-                  >Заказать</a
-                >
+                <a class="button button--secondary product-card__action" href="product.html">Подробнее</a><a class="button product-card__action" href="order.html?product=headphones">Заказать</a>
               </div>
             </article>
             <article class="product-card">
-              <img
-                class="product-card__image"
-                src="images/camera.svg"
-                alt="Веб-камера Full HD"
-              />
+              <img class="product-card__image" src="images/camera.svg" alt="Веб-камера Full HD">
               <p class="product-card__category">Камеры</p>
               <h3 class="product-card__title">Веб-камера Full HD</h3>
-              <p class="product-card__description">
-                Чёткое изображение и встроенный микрофон.
-              </p>
+              <p class="product-card__description">Чёткое изображение и встроенный микрофон.</p>
               <p class="product-card__price">2 790 руб.</p>
               <div class="product-card__actions">
-                <a class="button button--secondary" href="product.html"
-                  >Подробнее</a
-                ><a class="button" href="order.html?product=camera">Заказать</a>
+                <a class="button button--secondary product-card__action" href="product.html">Подробнее</a><a class="button product-card__action" href="order.html?product=camera">Заказать</a>
               </div>
             </article>
             <article class="product-card">
-              <img
-                class="product-card__image"
-                src="images/lamp.svg"
-                alt="Настольная LED-лампа"
-              />
+              <img class="product-card__image" src="images/lamp.svg" alt="Настольная LED-лампа">
               <p class="product-card__category">Аксессуары</p>
               <h3 class="product-card__title">Настольная LED-лампа</h3>
-              <p class="product-card__description">
-                Регулировка яркости и цветовой температуры.
-              </p>
+              <p class="product-card__description">Регулировка яркости и цветовой температуры.</p>
               <p class="product-card__price">2 290 руб.</p>
               <div class="product-card__actions">
-                <a class="button button--secondary" href="product.html"
-                  >Подробнее</a
-                ><a class="button" href="order.html?product=lamp">Заказать</a>
+                <a class="button button--secondary product-card__action" href="product.html">Подробнее</a><a class="button product-card__action" href="order.html?product=lamp">Заказать</a>
               </div>
             </article>
             <article class="product-card">
-              <img
-                class="product-card__image"
-                src="images/hub.svg"
-                alt="USB-концентратор"
-              />
+              <img class="product-card__image" src="images/hub.svg" alt="USB-концентратор">
               <p class="product-card__category">Аксессуары</p>
               <h3 class="product-card__title">USB-концентратор</h3>
-              <p class="product-card__description">
-                Четыре дополнительных порта в компактном корпусе.
-              </p>
+              <p class="product-card__description">Четыре дополнительных порта в компактном корпусе.</p>
               <p class="product-card__price">1 490 руб.</p>
               <div class="product-card__actions">
-                <a class="button button--secondary" href="product.html"
-                  >Подробнее</a
-                ><a class="button" href="order.html?product=hub">Заказать</a>
+                <a class="button button--secondary product-card__action" href="product.html">Подробнее</a><a class="button product-card__action" href="order.html?product=hub">Заказать</a>
               </div>
             </article>
           </div>
@@ -211,17 +160,21 @@
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div>
-          <a class="site-logo site-logo--footer" href="index.html"
-            >Shop<span>Project</span></a
-          >
+          <a class="site-logo site-logo--footer" href="index.html">
+            Shop<span class="site-logo__accent">Project</span>
+          </a>
           <p>Учебный интернет-магазин компьютерных аксессуаров.</p>
         </div>
         <div>
           <p><strong>Навигация</strong></p>
-          <a href="catalog.html">Каталог</a><a href="order.html">Заказ</a
-          ><a href="contacts.html">Контакты</a>
+          <a href="catalog.html" class="site-footer__link">Каталог</a>
+          <a href="order.html" class="site-footer__link">Заказ</a>
+          <a href="contacts.html" class="site-footer__link">Контакты</a>
+          <a class="site-footer__link" href="index.html#advantages">Преимущества</a>
+          <a class="site-footer__link" href="index.html#popular">Популярные товары</a>
+          <a class="site-footer__link" href="index.html#contacts">Контакты проекта</a>
         </div>
-        <p>© 2026 ShopProject<br />Фронтенд и бэкенд разработка</p>
+        <p>© 2026 ShopProject<br>Фронтенд и бэкенд разработка</p>
       </div>
     </footer>
   </body>

@@ -1,35 +1,28 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
       content="Механическая клавиатура MK-100: описание, цена и технические характеристики."
-    />
+    >
     <title>Механическая клавиатура MK-100 — ShopProject</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="site-header">
       <div class="container site-header__inner">
-        <a class="site-logo" href="index.html">Shop<span>Project</span></a>
+        <a class="site-logo" href="index.html">Shop<span class="site-logo__accent">Project</span></a>
         <nav class="site-nav" aria-label="Основная навигация">
           <ul class="site-nav__list">
-            <li><a class="site-nav__link" href="index.html">Главная</a></li>
-            <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-            <li>
-              <a
-                class="site-nav__link site-nav__link--active"
-                href="product.html"
-                aria-current="page"
-                >Товар</a
-              >
+            <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a>
             </li>
-            <li>
-              <a class="site-nav__link" href="order.html">Оформить заказ</a>
-            </li>
-            <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="order.html">Оформить заказ</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -38,44 +31,36 @@
       <section class="page-heading">
         <div class="container">
           <nav class="breadcrumbs" aria-label="Хлебные крошки">
-            <a href="index.html">Главная</a><span>/</span
-            ><a href="catalog.html">Каталог</a><span>/</span
-            ><span>Клавиатура MK-100</span>
+            <a href="index.html" class="breadcrumbs__link">Главная</a><span class="breadcrumbs__separator" aria-hidden="true">/</span><a href="catalog.html" class="breadcrumbs__link">Каталог</a><span class="breadcrumbs__separator" aria-hidden="true">/</span><span class="breadcrumbs__current" aria-current="page">Клавиатура MK-100</span>
           </nav>
           <p class="eyebrow">Карточка товара</p>
-          <h1>Механическая клавиатура MK-100</h1>
+          <h1 class="page-heading__title">Механическая клавиатура MK-100</h1>
         </div>
       </section>
       <section class="container product-detail">
         <div class="product-detail__media">
-          <span class="product-card__badge">Хит продаж</span
-          ><img
+          <span class="product-detail__badge">Хит продаж</span>
+          <img
             src="images/keyboard.svg"
             alt="Механическая клавиатура MK-100"
-          />
+            class="product-detail__image"
+          >
         </div>
         <div class="product-detail__content">
-          <p class="product-card__category">
-            Компьютерные аксессуары / Клавиатуры
-          </p>
+          <p class="product-detail__category">Компьютерные аксессуары / Клавиатуры</p>
           <h2>Для точной и комфортной работы</h2>
           <p>
-            Компактная клавиатура с механическими переключателями, регулируемой
-            RGB-подсветкой и прочным корпусом.
+            Компактная клавиатура с механическими переключателями, регулируемой RGB-подсветкой и прочным корпусом.
           </p>
           <ul class="check-list">
-            <li>русская и английская раскладка;</li>
-            <li>подключение через USB;</li>
-            <li>87 клавиш и 12 режимов подсветки;</li>
-            <li>гарантия 12 месяцев.</li>
+            <li class="check-list__item">русская и английская раскладка;</li>
+            <li class="check-list__item">подключение через USB;</li>
+            <li class="check-list__item">87 клавиш и 12 режимов подсветки;</li>
+            <li class="check-list__item">гарантия 12 месяцев.</li>
           </ul>
           <p class="product-detail__price">4 990 руб.</p>
-          <div class="hero__actions">
-            <a class="button" href="order.html?product=keyboard"
-              >Оформить заказ</a
-            ><a class="button button--secondary" href="catalog.html"
-              >Вернуться в каталог</a
-            >
+          <div class="product-detail__actions">
+            <a class="button" href="order.html?product=keyboard">Оформить заказ</a><a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
           </div>
         </div>
       </section>
@@ -85,9 +70,7 @@
           <h2>Технические характеристики</h2>
           <div class="table-wrapper">
             <table class="specification-table">
-              <caption>
-                Характеристики клавиатуры MK-100
-              </caption>
+              <caption>Характеристики клавиатуры MK-100</caption>
               <thead>
                 <tr>
                   <th scope="col">Характеристика</th>
@@ -127,10 +110,9 @@
       <aside class="container info-banner">
         <div>
           <p class="eyebrow">Важно</p>
-          <h2>Демонстрационный товар</h2>
-          <p>
-            Учебный проект не принимает реальные платежи. Данные приведены для
-            демонстрации структуры магазина.
+          <h2 class="info-banner__title">Демонстрационный товар</h2>
+          <p class="info-banner__description">
+            Учебный проект не принимает реальные платежи. Данные приведены для демонстрации структуры магазина.
           </p>
         </div>
         <a class="button" href="contacts.html">Задать вопрос</a>
@@ -140,17 +122,21 @@
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div>
-          <a class="site-logo site-logo--footer" href="index.html"
-            >Shop<span>Project</span></a
-          >
+          <a class="site-logo site-logo--footer" href="index.html">
+            Shop<span class="site-logo__accent">Project</span>
+          </a>
           <p>Учебный интернет-магазин компьютерных аксессуаров.</p>
         </div>
         <div>
           <p><strong>Навигация</strong></p>
-          <a href="catalog.html">Каталог</a><a href="order.html">Заказ</a
-          ><a href="contacts.html">Контакты</a>
+          <a href="catalog.html" class="site-footer__link">Каталог</a>
+          <a href="order.html" class="site-footer__link">Заказ</a>
+          <a href="contacts.html" class="site-footer__link">Контакты</a>
+          <a class="site-footer__link" href="index.html#advantages">Преимущества</a>
+          <a class="site-footer__link" href="index.html#popular">Популярные товары</a>
+          <a class="site-footer__link" href="index.html#contacts">Контакты проекта</a>
         </div>
-        <p>© 2026 ShopProject<br />Фронтенд и бэкенд разработка</p>
+        <p>© 2026 ShopProject<br>Фронтенд и бэкенд разработка</p>
       </div>
     </footer>
   </body>
