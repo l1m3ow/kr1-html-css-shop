@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
   </head>
-  <body>
+  <body id="top">
     <header class="site-header">
       <div class="container site-header__inner">
         <a class="site-logo" href="index.html">Shop<span class="site-logo__accent">Project</span></a>
@@ -41,7 +41,9 @@
               <a class="button" href="catalog.html">Смотреть каталог</a><a class="button button--secondary" href="#advantages">Наши преимущества</a>
             </div>
           </div>
-          <div class="hero__visual" aria-hidden="true">⌨️</div>
+          <div class="hero__visual" aria-hidden="true">
+            <img class="hero__illustration" src="images/keyboard.svg" alt="">
+          </div>
         </div>
       </section>
       <section class="section" id="advantages">
@@ -179,6 +181,9 @@
         <p>© 2026 ShopProject<br>Фронтенд и бэкенд разработка</p>
       </div>
     </footer>
+    <a class="back-to-top" href="#top" aria-label="Вернуться в начало страницы" title="Наверх">
+      <span class="back-to-top__icon" aria-hidden="true">↑</span>
+    </a>
     <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
       <button
         class="order-dialog__close"
