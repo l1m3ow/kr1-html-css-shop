@@ -9,6 +9,7 @@
     >
     <title>ShopProject — компьютерные аксессуары</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="js/main.js" defer></script>
   </head>
   <body id="top">
@@ -41,8 +42,8 @@
               <a class="button" href="catalog.html">Смотреть каталог</a><a class="button button--secondary" href="#advantages">Наши преимущества</a>
             </div>
           </div>
-          <div class="hero__visual" aria-hidden="true">
-            <img class="hero__illustration" src="images/keyboard.svg" alt="">
+          <div class="hero__visual">
+            <picture><source type="image/webp" srcset="images/keyboard-400.webp 400w, images/keyboard-800.webp 800w" sizes="(max-width: 650px) calc(100vw - 32px), (max-width: 900px) 45vw, 360px"><img class="hero__illustration" src="images/keyboard.svg" alt="" width="800" height="600"></picture>
           </div>
         </div>
       </section>
@@ -87,11 +88,10 @@
           <div class="product-grid">
             <article class="product-card">
               <span class="product-card__badge">Хит</span>
-              <img
+              <picture><source type="image/webp" srcset="images/keyboard-400.webp 400w, images/keyboard-800.webp 800w" sizes="(max-width: 650px) calc(100vw - 32px), (max-width: 900px) 45vw, 360px"><img
                 class="product-card__image"
                 src="images/keyboard.svg"
-                alt="Механическая клавиатура"
-              >
+                alt="Механическая клавиатура" width="800" height="600"></picture>
               <p class="product-card__category">Клавиатуры</p>
               <h3 class="product-card__title">Механическая клавиатура</h3>
               <p class="product-card__description">
@@ -111,7 +111,7 @@
             </article>
             <article class="product-card">
               <span class="product-card__badge product-card__badge--sale">−15%</span>
-              <img class="product-card__image" src="images/mouse.svg" alt="Беспроводная мышь">
+              <img class="product-card__image" src="images/mouse.svg" alt="Беспроводная мышь" width="800" height="600">
               <p class="product-card__category">Мыши</p>
               <h3 class="product-card__title">Беспроводная мышь</h3>
               <p class="product-card__description">
@@ -131,7 +131,7 @@
             </article>
             <article class="product-card">
               <span class="product-card__badge">Новинка</span>
-              <img class="product-card__image" src="images/headphones.svg" alt="Игровая гарнитура">
+              <img class="product-card__image" src="images/headphones.svg" alt="Игровая гарнитура" width="800" height="600">
               <p class="product-card__category">Наушники</p>
               <h3 class="product-card__title">Игровая гарнитура</h3>
               <p class="product-card__description">Объёмный звук, мягкие амбушюры и регулируемый микрофон.</p>
