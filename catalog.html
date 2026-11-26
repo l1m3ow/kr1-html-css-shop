@@ -9,6 +9,7 @@
     >
     <title>Каталог компьютерных аксессуаров — ShopProject</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body id="top">
     <header class="site-header">
@@ -87,11 +88,10 @@
           <div class="product-grid">
             <article class="product-card">
               <span class="product-card__badge">Хит</span>
-              <img
+              <picture><source type="image/webp" srcset="images/keyboard-400.webp 400w, images/keyboard-800.webp 800w" sizes="(max-width: 650px) calc(100vw - 32px), (max-width: 900px) 45vw, 360px"><img
                 class="product-card__image"
                 src="images/keyboard.svg"
-                alt="Механическая клавиатура"
-              >
+                alt="Механическая клавиатура" width="800" height="600"></picture>
               <p class="product-card__category">Клавиатуры</p>
               <h3 class="product-card__title">Механическая клавиатура</h3>
               <p class="product-card__description">Подсветка, прочный корпус и компактный формат.</p>
@@ -102,7 +102,7 @@
             </article>
             <article class="product-card">
               <span class="product-card__badge product-card__badge--sale">−15%</span>
-              <img class="product-card__image" src="images/mouse.svg" alt="Беспроводная мышь">
+              <img class="product-card__image" src="images/mouse.svg" alt="Беспроводная мышь" width="800" height="600">
               <p class="product-card__category">Мыши</p>
               <h3 class="product-card__title">Беспроводная мышь</h3>
               <p class="product-card__description">Бесшумные кнопки и эргономичная форма.</p>
@@ -113,7 +113,7 @@
             </article>
             <article class="product-card">
               <span class="product-card__badge">Новинка</span>
-              <img class="product-card__image" src="images/headphones.svg" alt="Игровая гарнитура">
+              <img class="product-card__image" src="images/headphones.svg" alt="Игровая гарнитура" width="800" height="600">
               <p class="product-card__category">Наушники</p>
               <h3 class="product-card__title">Игровая гарнитура</h3>
               <p class="product-card__description">Объёмный звук и регулируемый микрофон.</p>
@@ -123,7 +123,7 @@
               </div>
             </article>
             <article class="product-card">
-              <img class="product-card__image" src="images/camera.svg" alt="Веб-камера Full HD">
+              <img class="product-card__image" src="images/camera.svg" alt="Веб-камера Full HD" width="800" height="600">
               <p class="product-card__category">Камеры</p>
               <h3 class="product-card__title">Веб-камера Full HD</h3>
               <p class="product-card__description">Чёткое изображение и встроенный микрофон.</p>
@@ -133,7 +133,7 @@
               </div>
             </article>
             <article class="product-card">
-              <img class="product-card__image" src="images/lamp.svg" alt="Настольная LED-лампа">
+              <img class="product-card__image" src="images/lamp.svg" alt="Настольная LED-лампа" width="800" height="600">
               <p class="product-card__category">Аксессуары</p>
               <h3 class="product-card__title">Настольная LED-лампа</h3>
               <p class="product-card__description">Регулировка яркости и цветовой температуры.</p>
@@ -143,7 +143,7 @@
               </div>
             </article>
             <article class="product-card">
-              <img class="product-card__image" src="images/hub.svg" alt="USB-концентратор">
+              <img class="product-card__image" src="images/hub.svg" alt="USB-концентратор" width="800" height="600">
               <p class="product-card__category">Аксессуары</p>
               <h3 class="product-card__title">USB-концентратор</h3>
               <p class="product-card__description">Четыре дополнительных порта в компактном корпусе.</p>
